@@ -1,0 +1,181 @@
+/* === RESET GENERAL === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* === BODY === */
+body {
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* === NAVBAR === */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #21C534;
+    padding: 1rem 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+/* === ICONO MODO OSCURO/CLARO === */
+.toggle-theme {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+/* === SECCIÓN QUIÉN SOY === */
+.section {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.section p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #ccc;
+    line-height: 1.8;
+}
+
+/* === AVATAR === */
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #21C534;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+/* === SECCIÓN QUÉ HE HECHO === */
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.project-card {
+    width: 80px;
+    height: 100px;
+    background-color: transparent;
+    border: 2px solid #21C534;
+    color: #21C534;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    background-color: #1EEB7C;
+    color: #000;
+}
+
+/* === FORMULARIO DE CONTACTO === */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+form input {
+    width: 300px;
+    padding: 0.7rem;
+    border: none;
+    border-bottom: 2px solid #21C534;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    font-size: 1rem;
+}
+
+form input::placeholder {
+    color: #888;
+}
+
+form .error {
+    color: red;
+    font-size: 0.8rem;
+}
+
+/* === BOTÓN === */
+button {
+    background-color: #1EEB7C;
+    color: #000;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #21C534;
+}
+
+/* === FOOTER === */
+footer {
+    background-color: #21C534;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    color: #000;
+    font-weight: 500;
+}
+
+footer a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* === SECCIÓN DESTACADA (Section 2) === */
+.section-highlight {
+    background-color: #1EEB7C;
+    color: #000;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    width: fit-content;
+    margin: 2rem auto;
+}

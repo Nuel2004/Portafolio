@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Personal</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- ======= NAVBAR ======= -->
+    <nav>
+        <a href="#inicio">INICIO</a>
+        <a href="#sobre-mi">SOBRE MI</a>
+        <a href="#proyectos">PROYECTOS</a>
+        <a href="#contacto">CONTACTO</a>
+        <button class="toggle-theme" aria-label="Modo oscuro/claro">
+            <i data-lucide="moon"></i>
+        </button>
+    </nav>
+
+    <!-- ======= SECCIÓN: QUIÉN SOY ======= -->
+    <section id="sobre-mi" class="section">
+        <h2>¿QUIÉN SOY?</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac libero maximus,
+            pharetra sapien in, feugiat neque. Vivamus metus nibh, lobortis et auctor sit amet,
+            auctor aliquam arcu. Pellentesque porttitor arcu tincidunt mattis egestas.
+            Praesent vestibulum augue vel interdum pretium.
+        </p>
+
+        <div class="avatar">
+            <i data-lucide="user"></i>
+        </div>
+    </section>
+
+    <!-- ======= SECCIÓN: QUÉ HE HECHO ======= -->
+    <section id="proyectos" class="section">
+        <h2>¿QUÉ HE HECHO?</h2>
+        <div class="projects">
+            <ul>
+                <li>
+                    <a href="https://nuel2004.github.io/tablaDinamica/">Tabla Dinámica</a>
+                </li>
+                <li><a
+                        href="https://www.figma.com/design/UjgsUQFK17huB4rYTz3hyB/Portafolio-y-Gu%C3%ADa-de-estilos?node-id=0-1&p=f&t=j5ujbJZvk5GZUYQX-0">Figma</a>
+                </li>
+            </ul>
+            <div class="project-card"><i data-lucide="file"></i></div>
+            <div class="project-card"><i data-lucide="file"></i></div>
+            <div class="project-card"><i data-lucide="file"></i></div>
+            <div class="project-card"><i data-lucide="file"></i></div>
+        </div>
+    </section>
+
+    <!-- ======= SECCIÓN: CONTACTO ======= -->
+    <section id="contacto" class="section">
+        <h2>CONTACTA CON NOSOTROS</h2>
+        <form>
+            <input type="email" placeholder="Tu correo" required />
+            <input type="password" placeholder="Tu contraseña" minlength="6" required />
+            <button type="submit">SIGUIENTE</button>
+        </form>
+    </section>
+
+    <!-- ======= SECCIÓN VERDE DESTACADA ======= -->
+    <div class="section-highlight">
+        Section 2
+    </div>
+
+    <!-- ======= FOOTER ======= -->
+    <footer>
+        <a href="#">EMAIL</a>
+        <a href="#">GITHUB</a>
+        <a href="#">INSTAGRAM</a>
+        <a href="#">TELÉFONO</a>
+        <span>Copyright</span>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
