@@ -2,86 +2,125 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio Personal</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Personal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <!-- ======= NAVBAR ======= -->
     <nav>
-        <a href="#inicio">INICIO</a>
-        <a href="#sobre-mi">SOBRE MI</a>
-        <a href="#proyectos">PROYECTOS</a>
-        <a href="#contacto">CONTACTO</a>
-        <button class="toggle-theme" aria-label="Modo oscuro/claro">
-            <i data-lucide="moon"></i>
-        </button>
+        <ul class="nav-links">
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#sobre-mi">SOBRE MÍ</a></li>
+            <li><a href="#proyectos">PROYECTOS</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <button id="lightBtn" aria-label="Activar modo claro" title="Modo claro">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M12 4V2m0 20v-2m4.22-14.22l1.42-1.42M6.34 17.66l-1.42 1.42M20 12h2M2 12h2m14.22 4.22l1.42 1.42M6.34 6.34L4.92 4.92M12 8a4 4 0 1 0 0 8a4 4 0 0 0 0-8z" />
+                </svg>
+            </button>
+
+            <button id="darkBtn" aria-label="Activar modo oscuro" title="Modo oscuro">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                </svg>
+            </button>
+        </div>
+
     </nav>
-
-    <!-- ======= SECCIÓN: QUIÉN SOY ======= -->
-    <section id="sobre-mi" class="section">
-        <h2>¿QUIÉN SOY?</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac libero maximus,
-            pharetra sapien in, feugiat neque. Vivamus metus nibh, lobortis et auctor sit amet,
-            auctor aliquam arcu. Pellentesque porttitor arcu tincidunt mattis egestas.
-            Praesent vestibulum augue vel interdum pretium.
-        </p>
-
-        <div class="avatar">
-            <i data-lucide="user"></i>
+    <section class="quien-soy" id="sobre-mi">
+        <div class="quien-soy-content">
+            <h1>¿QUIÉN SOY?</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac libero maximus pharetra sapien a,
+                feugiat sed. Vivamus metus nibh, lobortis et auctor sit amet, auctor aliquam arcu. Pellentesque
+                porttitor arcu tincidunt mattis egestas. Praesent vestibulum, augue vel interdum pretium, magna risus
+                tristique dolor, et euismod justo nsus et mi. Vivamus ac ex non mi eleifend elementum. Proin nec gravida
+                nibh. Nulla et lectus pharetra, sollicitudin enim ac, eleifend turpis. Nunc sit amet dignissim sem.
+                Aliquam eu nisl eget tortor pulvinar sollicitudin volutpat id ex.</p>
         </div>
+        <div class="avatar">O</div>
     </section>
-
-    <!-- ======= SECCIÓN: QUÉ HE HECHO ======= -->
-    <section id="proyectos" class="section">
+    <section class="que-he-hecho" id="proyectos">
         <h2>¿QUÉ HE HECHO?</h2>
-        <div class="projects">
-            <ul>
-                <li>
-                    <a href="https://nuel2004.github.io/tablaDinamica/">Tabla Dinámica</a>
-                </li>
-                <li><a
-                        href="https://www.figma.com/design/UjgsUQFK17huB4rYTz3hyB/Portafolio-y-Gu%C3%ADa-de-estilos?node-id=0-1&t=6KlNRLxva7505rNl-1">Figma</a>
-                </li>
-                <li><a href="https://nuel2004.github.io/GestionDeFechas/">Cuenta atras</a></li>
-            </ul>
-            <div class="project-card"><i data-lucide="file"></i></div>
-            <div class="project-card"><i data-lucide="file"></i></div>
-            <div class="project-card"><i data-lucide="file"></i></div>
-            <div class="project-card"><i data-lucide="file"></i></div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <a href="https://nuel2004.github.io/GestionDeFechas/">
+                    <div class="project-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" />
+                            <path d="M14 2v6h6" />
+                        </svg>
+                    </div>
+                </a>
+                <p>Gestión de Fechas</p>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" />
+                        <path d="M14 2v6h6" />
+                    </svg>
+                </div>
+                <p>AventuraJS</p>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" />
+                        <path d="M14 2v6h6" />
+                    </svg>
+                </div>
+                <p>Formulario</p>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" />
+                        <path d="M14 2v6h6" />
+                    </svg>
+                </div>
+            </div>
         </div>
     </section>
-
-    <!-- ======= SECCIÓN: CONTACTO ======= -->
-    <section id="contacto" class="section">
-        <h2>CONTACTA CON NOSOTROS</h2>
-        <form>
-            <input type="email" placeholder="Tu correo" required />
-            <input type="password" placeholder="Tu contraseña" minlength="6" required />
-            <button type="submit">SIGUIENTE</button>
-        </form>
+    <section class="contacto" id="contacto">
+        <h3>¿Necesitas algo? Háblame</h3>
     </section>
-
-    <!-- ======= SECCIÓN VERDE DESTACADA ======= -->
-    <div class="section-highlight">
-        Section 2
-    </div>
-
-    <!-- ======= FOOTER ======= -->
     <footer>
-        <a href="#">EMAIL</a>
-        <a href="#">GITHUB</a>
-        <a href="#">INSTAGRAM</a>
-        <a href="#">TELÉFONO</a>
-        <span>Copyright</span>
+        <div class="social-links">
+            <a href="#" class="social-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                </svg>
+            </a>
+            <a href="#" class="social-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+            </a>
+            <a href="#" class="social-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+            </a>
+            <a href="#" class="social-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
+                </svg>
+            </a>
+        </div>
+        <div class="copyright">Copyright</div>
     </footer>
-
-    <script>
-        lucide.createIcons();
-    </script>
 </body>
 
 </html>
